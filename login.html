@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #04fbee; /* Set the background color */
+        }
+        .login-container {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            border: 1px solid #000000;
+            background-color:#d7d38d; /* Set the background color for the login form container */
+        }
+        input {
+            
+            margin: 10px;
+            padding: 5px;
+            width: 90%;
+        }
+        button {
+            padding: 8px;
+			width:80px;
+            background-color: #000000;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="login-container">
+					<h2>Login</h2>
+					<form action="login_process.php" method="post">
+						<label for="username">Username:</label>
+						<input type="text" id="username" name="username" required>
+
+						<label for="password">Password:</label>
+						<input type="password" id="password" name="password" required>
+
+						<button type="submit">Login</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
